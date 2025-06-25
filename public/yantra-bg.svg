@@ -1,0 +1,33 @@
+
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.2">
+    <!-- Outer Circle -->
+    <circle cx="400" cy="400" r="380" stroke="#D4AF37" stroke-width="2" />
+    
+    <!-- Inner Circle -->
+    <circle cx="400" cy="400" r="320" stroke="#D4AF37" stroke-width="2" />
+    
+    <!-- Hexagram -->
+    <path d="M400 80L553.205 320H246.795L400 80Z" stroke="#D4AF37" stroke-width="2" />
+    <path d="M400 720L246.795 480H553.205L400 720Z" stroke="#D4AF37" stroke-width="2" />
+    <path d="M80 400L320 246.795V553.205L80 400Z" stroke="#D4AF37" stroke-width="2" />
+    <path d="M720 400L480 553.205V246.795L720 400Z" stroke="#D4AF37" stroke-width="2" />
+    
+    <!-- Central Star -->
+    <circle cx="400" cy="400" r="100" stroke="#D4AF37" stroke-width="2" />
+    <circle cx="400" cy="400" r="50" stroke="#D4AF37" stroke-width="2" />
+    <circle cx="400" cy="400" r="10" fill="#D4AF37" />
+    
+    <!-- Decorative Elements -->
+    <path d="M400 200L425 250H375L400 200Z" fill="#D4AF37" />
+    <path d="M400 600L375 550H425L400 600Z" fill="#D4AF37" />
+    <path d="M200 400L250 375V425L200 400Z" fill="#D4AF37" />
+    <path d="M600 400L550 425V375L600 400Z" fill="#D4AF37" />
+    
+    <!-- Sanskrit-inspired decorative elements -->
+    <path d="M400 150C420 150 430 170 430 190C430 210 420 230 400 230C380 230 370 210 370 190C370 170 380 150 400 150Z" stroke="#D4AF37" stroke-width="2" />
+    <path d="M400 650C420 650 430 630 430 610C430 590 420 570 400 570C380 570 370 590 370 610C370 630 380 650 400 650Z" stroke="#D4AF37" stroke-width="2" />
+    <path d="M150 400C150 380 170 370 190 370C210 370 230 380 230 400C230 420 210 430 190 430C170 430 150 420 150 400Z" stroke="#D4AF37" stroke-width="2" />
+    <path d="M650 400C650 380 630 370 610 370C590 370 570 380 570 400C570 420 590 430 610 430C630 430 650 420 650 400Z" stroke="#D4AF37" stroke-width="2" />
+  </g>
+</svg>

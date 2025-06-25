@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 224 71% 4%;
+
+    --card: 210 50% 98%;
+    --card-foreground: 224 71% 4%;
+
+    --popover: 210 50% 98%;
+    --popover-foreground: 224 71% 4%;
+
+    --primary: 222 47% 45%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 196 83% 90%;
+    --secondary-foreground: 224 71% 4%;
+
+    --muted: 220 14% 90%;
+    --muted-foreground: 220 8% 46%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71% 4%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-800 font-poppins;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sanskrit text-indigo-900;
+  }
+}
+
+/* Marquee animation keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.pause-marquee {
+  animation-play-state: paused;
+}
+
+.star {
+  @apply absolute rounded-full bg-indigo-200/50 animate-twinkle;
+  box-shadow: 0 0 5px 1px rgba(165, 180, 252, 0.5);
+}
+
+.yantra-bg {
+  @apply bg-slate-50 bg-yantra-pattern bg-fixed bg-center bg-no-repeat;
+  background-blend-mode: overlay;
+}
+
+.service-card {
+  @apply p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 shadow-md 
+         hover:shadow-lg hover:translate-y-[-5px] transition-all duration-300 border border-blue-100/20 hover:border-blue-200/60;
+  backdrop-filter: blur(10px);
+}
+
+.testimonial-card {
+  @apply p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-blue-50 
+         border border-blue-100/20 shadow-md;
+  backdrop-filter: blur(10px);
+}
+
+.cool-text {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent;
+}
